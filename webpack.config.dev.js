@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "dist"),
     filename: path.join("static", "js", "[name].js"),
-    publicPath: '/'
+    publicPath: '/react-bulma-ts/'
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".css", ".json"],
@@ -18,7 +18,7 @@ module.exports = {
   devServer: {
     historyApiFallback: {
       rewrites: [
-        { from: /./, to: '/404.html' }
+        { from: /./, to: '/react-bulma-ts/404.html' }
       ]
     }
   },
@@ -69,7 +69,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        {from: 'src/404.html'}
+        {from: './src/404.html'}
       ]
     })
   ],

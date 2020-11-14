@@ -18,7 +18,7 @@ module.exports = {
   devServer: {
     historyApiFallback: {
       rewrites: [
-        { from: /./, to: '/404.html' }
+        { from: /./, to: '/react-bulma-ts/404.html' }
       ]
     }
   },
@@ -69,7 +69,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        {from: 'src/404.html'}
+        {from: './src/404.html'}
       ]
     })
   ],
