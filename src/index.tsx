@@ -7,6 +7,8 @@ import * as History from 'history';
 import App from './containers/app';
 import createStore from './common/create-store';
 
+import './styles/bulma-docs.css';
+
 const history = History.createBrowserHistory();
 const store = createStore(history);
 

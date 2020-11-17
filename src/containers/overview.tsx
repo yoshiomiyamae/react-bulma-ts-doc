@@ -3,14 +3,12 @@ import * as Bulma from "react-bulma-ts";
 import { connect } from "react-redux";
 import { OverviewState } from "../reducers/overview-reducer";
 import { OverviewActionDispatcher } from "../actions/overview-action";
-import { Dispatch } from "redux";
-import { OverviewMenu } from "../models/overview-model";
 import { Route, Switch } from "react-router-dom";
 import Start from "./overview/start";
+import Classes from "./overview/classes";
 
 
 interface OverviewProps {
-  selectedMenu?: OverviewMenu;
   actions?: OverviewActionDispatcher;
 }
 
@@ -28,64 +26,69 @@ export default class Overview extends React.Component<OverviewProps> {
       <Bulma.Container>
         <Bulma.Tabs>
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Start ? Bulma.State.Active : null]}
-            // onClick={() => this.props.actions?.setMenu(OverviewMenu.Start)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/start') ? Bulma.State.Active : null]}
             href="/react-bulma-ts/overview/start"
             >
             Start
           </Bulma.Tab>
-          <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Customize ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Customize)}
+          {/* <Bulma.Tab
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/customize') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/customize"
             >
             Customize
-          </Bulma.Tab>
+          </Bulma.Tab> */}
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Classes ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Classes)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/classes') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/classes"
             >
             Classes
           </Bulma.Tab>
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Modular ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Modular)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/modular') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/modular"
             >
             Modular
           </Bulma.Tab>
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Responsiveness ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Responsiveness)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/responsiveness') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/responsiveness"
             >
             Responsiveness
           </Bulma.Tab>
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Variables ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Variables)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/variables') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/variables"
             >
             Variables
           </Bulma.Tab>
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Colors ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Colors)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/colors') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/colors"
             >
             Colors
           </Bulma.Tab>
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Functions ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Functions)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/functions') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/functions"
             >
             Functions
           </Bulma.Tab>
           <Bulma.Tab
-            options={[this.props.selectedMenu === OverviewMenu.Mixins ? Bulma.State.Active : null]}
-            onClick={() => this.props.actions?.setMenu(OverviewMenu.Mixins)}
+            options={[document.location.pathname.startsWith('/react-bulma-ts/overview/mixins') ? Bulma.State.Active : null]}
+            href="/react-bulma-ts/overview/mixins"
             >
             Mixins
           </Bulma.Tab>
         </Bulma.Tabs>
         <Switch>
           <Route path="/react-bulma-ts/overview/start" exact={false} component={Start} />
-          <Route path="/react-bulma-ts/modifiers" exact={false} render={() =><div></div>} />
+          {/* <Route path="/react-bulma-ts/overview/customize" exact={false} render={() =><div></div>} /> */}
+          <Route path="/react-bulma-ts/overview/classes" exact={false} component={Classes}  />
+          <Route path="/react-bulma-ts/overview/modular" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/overview/responsiveness" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/overview/variables" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/overview/colors" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/overview/functions" exact={false} render={() =><div></div>} />
         </Switch>
       </Bulma.Container>
     ];

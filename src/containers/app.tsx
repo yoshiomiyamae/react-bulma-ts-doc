@@ -6,6 +6,7 @@ import "react-bulma-ts/dist/main.css";
 import { connect } from "react-redux";
 import Overview from "./overview";
 import "highlight.js/styles/vs.css";
+import Elements from "./elements";
 
 interface AppProps {
 }
@@ -22,6 +23,11 @@ export default class App extends React.Component<AppProps> {
         <Switch>
           <Route path="/react-bulma-ts/overview" exact={false} component={Overview} />
           <Route path="/react-bulma-ts/modifiers" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/columns" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/layout" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/form" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/elements" exact={false} component={Elements} />
+          <Route path="/react-bulma-ts/components" exact={false} render={() =><div></div>} />
         </Switch>
         <Bulma.Section>
           <Bulma.Container>

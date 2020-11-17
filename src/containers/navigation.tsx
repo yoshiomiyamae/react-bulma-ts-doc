@@ -63,37 +63,37 @@ export default class Navigation extends React.Component<NavigationProps> {
               </Bulma.Tab>
               <Bulma.Tab
                 options={[document.location.pathname.startsWith('/react-bulma-ts/modifiers') ? Bulma.State.Active : null]}
-                href="/react-bulma-ts/modifiers"
+                href="/react-bulma-ts/modifiers/syntax"
                 >
                 Modifiers
               </Bulma.Tab>
               <Bulma.Tab
                 options={[document.location.pathname.startsWith('/react-bulma-ts/columns') ? Bulma.State.Active : null]}
-                href="/react-bulma-ts/columns"
+                href="/react-bulma-ts/columns/basics"
                 >
                 Columns
               </Bulma.Tab>
               <Bulma.Tab
                 options={[document.location.pathname.startsWith('/react-bulma-ts/layout') ? Bulma.State.Active : null]}
-                href="/react-bulma-ts/layout"
+                href="/react-bulma-ts/layout/container"
                 >
                 Layout
               </Bulma.Tab>
               <Bulma.Tab
                 options={[document.location.pathname.startsWith('/react-bulma-ts/form') ? Bulma.State.Active : null]}
-                href="/react-bulma-ts/form"
+                href="/react-bulma-ts/form/general"
                 >
                 Form
               </Bulma.Tab>
               <Bulma.Tab
                 options={[document.location.pathname.startsWith('/react-bulma-ts/elements') ? Bulma.State.Active : null]}
-                href="/react-bulma-ts/elements"
+                href="/react-bulma-ts/elements/box"
                 >
                 Elements
               </Bulma.Tab>
               <Bulma.Tab
                 options={[document.location.pathname.startsWith('/react-bulma-ts/components') ? Bulma.State.Active : null]}
-                href="/react-bulma-ts/components"
+                href="/react-bulma-ts/components/breadcrumb"
                 >
                 Components
               </Bulma.Tab>

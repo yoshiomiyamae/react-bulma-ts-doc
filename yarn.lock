@@ -3690,10 +3690,10 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-bulma-ts@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/react-bulma-ts/-/react-bulma-ts-2.0.4.tgz#00e11ef79d3922eefe08752caa56598f61c7fd6e"
-  integrity sha512-52X7heAEgYPJY6I6C3ed8hPW4OzwPvSza/2dsvhkeD0p5dBzVnLW8a6S4lpV1VFqeax2RAAK6V6Y64U7jjZLmw==
+react-bulma-ts@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-bulma-ts/-/react-bulma-ts-2.0.5.tgz#360b6a2a369347679c3162fbfb5c813e34c6e90d"
+  integrity sha512-kedIcFWkEpov89sGj07IRG/Yr/QmQ9l7OSErRSN4hez57mw4AWhi1G+L48owjGh6MX2uN8glT9Ay96kHFsBhIQ==
   dependencies:
     bulma "^0.9.1"
     react "^17.0.1"
