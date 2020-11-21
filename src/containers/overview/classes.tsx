@@ -23,7 +23,7 @@ export default class Classes extends React.Component<ClassesProps> {
   render() {
     return <div>
       <Bulma.Title titleType={Bulma.TitleType.Heading} level={3}>
-        Getting classesed
+        Classes
       </Bulma.Title>
       <Bulma.Subtitle titleType={Bulma.TitleType.Heading} level={5}>
         Bulma is simply a <strong>collection</strong> of CSS classes. Write the HTML code you want.
