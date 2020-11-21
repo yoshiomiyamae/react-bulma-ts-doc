@@ -13,7 +13,7 @@
     "copy-webpack-plugin": "^6.3.0",
     "highlight.js": "^10.3.2",
     "path-to-regexp": "^6.2.0",
-    "react-bulma-ts": "^2.0.5",
+    "react-bulma-ts": "^2.0.10",
     "react-highlight.js": "^1.0.7",
     "react-router-dom": "^5.2.0",
     "redux-logger": "^3.0.6",

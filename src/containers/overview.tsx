@@ -6,6 +6,7 @@ import { OverviewActionDispatcher } from "../actions/overview-action";
 import { Route, Switch } from "react-router-dom";
 import Start from "./overview/start";
 import Classes from "./overview/classes";
+import Responsiveness from "./overview/responsiveness";
 
 
 interface OverviewProps {
@@ -43,12 +44,12 @@ export default class Overview extends React.Component<OverviewProps> {
             >
             Classes
           </Bulma.Tab>
-          <Bulma.Tab
+          {/* <Bulma.Tab
             options={[document.location.pathname.startsWith('/react-bulma-ts/overview/modular') ? Bulma.State.Active : null]}
             href="/react-bulma-ts/overview/modular"
             >
             Modular
-          </Bulma.Tab>
+          </Bulma.Tab> */}
           <Bulma.Tab
             options={[document.location.pathname.startsWith('/react-bulma-ts/overview/responsiveness') ? Bulma.State.Active : null]}
             href="/react-bulma-ts/overview/responsiveness"
@@ -84,8 +85,8 @@ export default class Overview extends React.Component<OverviewProps> {
           <Route path="/react-bulma-ts/overview/start" exact={false} component={Start} />
           {/* <Route path="/react-bulma-ts/overview/customize" exact={false} render={() =><div></div>} /> */}
           <Route path="/react-bulma-ts/overview/classes" exact={false} component={Classes}  />
-          <Route path="/react-bulma-ts/overview/modular" exact={false} render={() =><div></div>} />
-          <Route path="/react-bulma-ts/overview/responsiveness" exact={false} render={() =><div></div>} />
+          {/* <Route path="/react-bulma-ts/overview/modular" exact={false} render={() =><div></div>} /> */}
+          <Route path="/react-bulma-ts/overview/responsiveness" exact={false} component={Responsiveness} />
           <Route path="/react-bulma-ts/overview/variables" exact={false} render={() =><div></div>} />
           <Route path="/react-bulma-ts/overview/colors" exact={false} render={() =><div></div>} />
           <Route path="/react-bulma-ts/overview/functions" exact={false} render={() =><div></div>} />
