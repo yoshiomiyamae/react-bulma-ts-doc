@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 import Overview from "./overview";
 import "highlight.js/styles/vs.css";
 import Elements from "./elements";
+import Modifiers from "./modifiers";
 
 interface AppProps {
 }
@@ -22,7 +23,7 @@ export default class App extends React.Component<AppProps> {
         <Navigation />
         <Switch>
           <Route path="/react-bulma-ts/overview" exact={false} component={Overview} />
-          <Route path="/react-bulma-ts/modifiers" exact={false} render={() =><div></div>} />
+          <Route path="/react-bulma-ts/modifiers" exact={false} component={Modifiers} />
           <Route path="/react-bulma-ts/columns" exact={false} render={() =><div></div>} />
           <Route path="/react-bulma-ts/layout" exact={false} render={() =><div></div>} />
           <Route path="/react-bulma-ts/form" exact={false} render={() =><div></div>} />

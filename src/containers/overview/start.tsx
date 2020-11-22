@@ -81,7 +81,8 @@ export default class Start extends React.Component<StartProps> {
           <p>
             If you want to get started <strong>right away</strong> you can use this <strong>TSX starter template</strong> Just copy/paste this code in a file and save it on your computer
           </p>
-          <Highlight language={typescript}>
+          <div className="bd-example">
+            <Highlight language={typescript}>
 {`
 import React from 'react';
 import * as Bulma from "react-bulma-ts";
@@ -105,7 +106,8 @@ export default class Sample extends React.Component<SampleProps> {
   }
 }
 `}
-          </Highlight>
+            </Highlight>
+          </div>
         </Bulma.Content>
       </Bulma.Content>
     </div>;

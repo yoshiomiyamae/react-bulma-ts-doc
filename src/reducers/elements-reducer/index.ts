@@ -1,4 +1,6 @@
-import { ElementsAction, ElementsActionTypes } from "../actions/elements-action"
+export * from './content-reducer';
+
+import { ElementsAction, ElementsActionTypes } from "../../actions/elements-action"
 
 export interface ElementsState {
 }

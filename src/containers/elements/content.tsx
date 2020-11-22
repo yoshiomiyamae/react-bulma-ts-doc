@@ -1,7 +1,7 @@
 import React from "react";
 import * as Bulma from "react-bulma-ts";
 import { connect } from "react-redux";
-import { ContentState } from "../../reducers/elements/content-reducer";
+import { ContentState } from "../../reducers/elements-reducer/content-reducer";
 import { ContentActionDispatcher } from "../../actions/elements/content-action";
 import Highlight from "react-highlight.js";
 import {placeholder256x256} from "../../image"
