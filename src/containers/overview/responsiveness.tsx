@@ -1,7 +1,7 @@
 import React from "react";
 import * as Bulma from "react-bulma-ts";
 import { connect } from "react-redux";
-import { ResponsivenessState } from "../../reducers/overview/responsiveness-reducer";
+import { ResponsivenessState } from "../../reducers/overview-reducer/responsiveness-reducer";
 import { ResponsivenessActionDispatcher } from "../../actions/overview/responsiveness-action";
 import Highlight from "react-highlight.js";
 const bash = require("highlight.js/lib/languages/bash");

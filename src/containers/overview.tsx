@@ -7,6 +7,7 @@ import { Route, Switch } from "react-router-dom";
 import Start from "./overview/start";
 import Classes from "./overview/classes";
 import Responsiveness from "./overview/responsiveness";
+import Colors from "./overview/colors";
 
 
 interface OverviewProps {
@@ -56,30 +57,30 @@ export default class Overview extends React.Component<OverviewProps> {
             >
             Responsiveness
           </Bulma.Tab>
-          <Bulma.Tab
+          {/* <Bulma.Tab
             options={[document.location.pathname.startsWith('/react-bulma-ts/overview/variables') ? Bulma.State.Active : null]}
             href="/react-bulma-ts/overview/variables"
             >
             Variables
-          </Bulma.Tab>
+          </Bulma.Tab> */}
           <Bulma.Tab
             options={[document.location.pathname.startsWith('/react-bulma-ts/overview/colors') ? Bulma.State.Active : null]}
             href="/react-bulma-ts/overview/colors"
             >
             Colors
           </Bulma.Tab>
-          <Bulma.Tab
+          {/* <Bulma.Tab
             options={[document.location.pathname.startsWith('/react-bulma-ts/overview/functions') ? Bulma.State.Active : null]}
             href="/react-bulma-ts/overview/functions"
             >
             Functions
-          </Bulma.Tab>
-          <Bulma.Tab
+          </Bulma.Tab> */}
+          {/* <Bulma.Tab
             options={[document.location.pathname.startsWith('/react-bulma-ts/overview/mixins') ? Bulma.State.Active : null]}
             href="/react-bulma-ts/overview/mixins"
             >
             Mixins
-          </Bulma.Tab>
+          </Bulma.Tab> */}
         </Bulma.Tabs>
         <Switch>
           <Route path="/react-bulma-ts/overview/start" exact={false} component={Start} />
@@ -87,9 +88,10 @@ export default class Overview extends React.Component<OverviewProps> {
           <Route path="/react-bulma-ts/overview/classes" exact={false} component={Classes}  />
           {/* <Route path="/react-bulma-ts/overview/modular" exact={false} render={() =><div></div>} /> */}
           <Route path="/react-bulma-ts/overview/responsiveness" exact={false} component={Responsiveness} />
-          <Route path="/react-bulma-ts/overview/variables" exact={false} render={() =><div></div>} />
-          <Route path="/react-bulma-ts/overview/colors" exact={false} render={() =><div></div>} />
-          <Route path="/react-bulma-ts/overview/functions" exact={false} render={() =><div></div>} />
+          {/* <Route path="/react-bulma-ts/overview/variables" exact={false} render={() =><div></div>} /> */}
+          <Route path="/react-bulma-ts/overview/colors" exact={false} component={Colors} />
+          {/* <Route path="/react-bulma-ts/overview/functions" exact={false} render={() =><div></div>} /> */}
+          {/* <Route path="/react-bulma-ts/overview/mixins" exact={false} render={() =><div></div>} /> */}
         </Switch>
       </Bulma.Container>
     ];

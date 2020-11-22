@@ -1,7 +1,7 @@
 import React from "react";
 import * as Bulma from "react-bulma-ts";
 import { connect } from "react-redux";
-import { ClassesState } from "../../reducers/overview/classes-reducer";
+import { ClassesState } from "../../reducers/overview-reducer/classes-reducer";
 import { ClassesActionDispatcher } from "../../actions/overview/classes-action";
 import Highlight from "react-highlight.js";
 const bash = require("highlight.js/lib/languages/bash");

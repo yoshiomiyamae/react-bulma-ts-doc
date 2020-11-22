@@ -1,7 +1,7 @@
 import React from "react";
 import * as Bulma from "react-bulma-ts";
 import { connect } from "react-redux";
-import { StartState } from "../../reducers/overview/start-reducer";
+import { StartState } from "../../reducers/overview-reducer/start-reducer";
 import { StartActionDispatcher } from "../../actions/overview/start-action";
 import Highlight from "react-highlight.js";
 const bash = require("highlight.js/lib/languages/bash");
