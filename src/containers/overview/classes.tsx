@@ -42,7 +42,7 @@ export default class Classes extends React.Component<ClassesProps> {
         </p>
         <ul>
           <li><code>generic.sass</code> to define a basic style for your page</li>
-          <li>the <a href="/react-bluma-ts/elements/content"><code>.content</code> class</a> to use for <em>any</em> textual content, like WYSIWYG</li>
+          <li>the <a href="/react-bulma-ts/elements/content"><code>.content</code> class</a> to use for <em>any</em> textual content, like WYSIWYG</li>
         </ul>
       </Bulma.Content>
     </div>;
